@@ -5,7 +5,7 @@
 
 - Assume the MKL installation location is /opt/intel/mkl (you cannot just copy libmkl_rt.so).
   - Copy mkl_wrapper.jar to /opt/intel/mkl/wrapper/mkl_wrapper.jar
-  - Copy mkl_wrapper.so to /opt/intel/mkl_wrapper/mkl_wrapper.so
+  - Copy mkl_wrapper.so to /opt/intel/mkl/wrapper/mkl_wrapper.so
   - By default, the MKL wrapper will search /opt/intel/mkl/wrapper to find mkl_wrapper.so. If you put it on other path, please use -Dcom.intel.mkl.wrapper=/path/to/find/mkl_wrapper.so. 
 - Spark configuration. (on each node):
   - Create: /etc/ld.so.conf.d/mkl_blas.conf
